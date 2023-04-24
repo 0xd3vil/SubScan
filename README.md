@@ -3,14 +3,15 @@ The internet is a vast and constantly expanding network of interconnected comput
 
 Knowing the subdomains of a website can be useful for various reasons, such as identifying potential vulnerabilities, finding hidden pages or directories, or discovering additional services or content. However, manually searching for subdomains can be a time-consuming and tedious task, especially for large or complex websites.
 
-In this project, we aimed to create a simple subdomain scanner using Python, Docker, and a CI/CD pipeline. The scanner would be able to query the nameservers for a given domain and extract its subdomains. The project was designed to demonstrate how to use Docker and a CI/CD pipeline to automate the build, test, and deployment process of a Python application.
-Technologies Used
+In this project, I aimed to create a simple subdomain scanner using Python, Docker, and a CI/CD pipeline. The scanner would be able to query the nameservers for a given domain and extract its subdomains. The project was designed to demonstrate how to use Docker and a CI/CD pipeline to automate the build, test, and deployment process of a Python application.
 
-**The following technologies were used in this project:**</br>
-    **Python 3.9:** The programming language used to write the subdomain scanner script.
-    **Docker:** A containerization platform used to build and run the subdomain scanner in a containerized environment.
-    **Jenkins:** An open-source automation server used to create the CI/CD pipeline for the subdomain scanner project.
-    **Git:** A version control system used to manage the project files and track changes.
+**Technologies Used:**</br>
+The following technologies were used in this project:</br>
+
+    Python 3.9: The programming language used to write the subdomain scanner script.</br>
+    Docker: A containerization platform used to build and run the subdomain scanner in a containerized environment.</br>
+    Jenkins: An open-source automation server used to create the CI/CD pipeline for the subdomain scanner project.</br>
+    Git: A version control system used to manage the project files and track changes.
 
 **Project Implementation**</br>
 The project was implemented in the following steps:
@@ -32,3 +33,5 @@ The subdomain scanner project was successfully implemented using Python, Docker,
 
 **Conclusion:**</br>
 The subdomain scanner project demonstrated how to use Python, Docker, and Jenkins to automate the build, test, and deployment process of a Python application. The project can be extended to add more features, such as scanning for open ports on subdomains or creating a web interface for the scanner. Overall, the project was a success in achieving its goal of demonstrating the use of Docker and a CI/CD pipeline in a Python project.
+
+<h3>https://linkedin.com/in/0xd3vil</h3>
