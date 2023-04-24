@@ -34,4 +34,25 @@ The subdomain scanner project was successfully implemented using Python, Docker,
 **Conclusion:**</br>
 The subdomain scanner project demonstrated how to use Python, Docker, and Jenkins to automate the build, test, and deployment process of a Python application. The project can be extended to add more features, such as scanning for open ports on subdomains or creating a web interface for the scanner. Overall, the project was a success in achieving its goal of demonstrating the use of Docker and a CI/CD pipeline in a Python project.
 
+**Discussion:**</br>
+The subdomain scanner project using Docker and CI/CD pipeline was a success in achieving its goal of demonstrating the use of Docker and a CI/CD pipeline in a Python project. The project showcased the automation of the build, test, and deployment process, which resulted in increased efficiency and reduced the risk of errors.
+
+One of the key successes of the project was the successful integration of Docker and Jenkins. Docker was used to package the application and its dependencies into a container, which made it easy to deploy the application across different platforms. Jenkins was used as the CI/CD pipeline tool, which allowed for the automation of the build, test, and deployment process.
+
+Another success of the project was the ability to extract subdomains from a given domain. The Python script was able to query the nameservers for the specified domain and extract its subdomains using the dnspython package. The Python script was also able to handle errors gracefully, which ensured that the application did not crash.
+
+However, the project had some limitations. One limitation was that the scanner was only able to extract subdomains from a single domain. In the future, the project could be extended to support the scanning of multiple domains at once. Another limitation was that the scanner did not check for duplicate subdomains. In the future, the project could be extended to remove duplicate subdomains from the output.
+
+Future Development:
+
+There are several suggestions for future development of the subdomain scanner project. One suggestion is to add support for scanning multiple domains at once. This could be achieved by accepting a list of domains as input and running the scanner on each domain in the list.
+
+Another suggestion is to remove duplicate subdomains from the output. This could be achieved by storing the subdomains in a set and checking if a subdomain has already been added before adding it to the set.
+
+Another suggestion is to add support for scanning for open ports on subdomains. This could be achieved by using the Python socket module to scan for open ports on each subdomain in the output.
+
+Finally, another suggestion is to create a web interface for the scanner. This would allow users to input domains and view the output in a user-friendly way. The web interface could be created using a Python web framework such as Flask or Django.
+
+Overall, the subdomain scanner project using Docker and CI/CD pipeline was a success in achieving its goals and demonstrated the potential for automation in software development. With further development, the project could become a valuable tool for security professionals and researchers.
+
 <h3>https://linkedin.com/in/0xd3vil</h3>
