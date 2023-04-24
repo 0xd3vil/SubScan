@@ -1,17 +1,26 @@
-import dns.resolver
+import argparse
+import requests
+import json
 
-def scan_subdomains(domain):
-    subdomains = []
-    try:
-        answers = dns.resolver.query(domain, 'NS')
-        for rdata in answers:
-            subdomain = str(rdata).strip('.')
-            subdomains.append(subdomain)
-    except Exception:
-        pass
-    return subdomains
+parser = argparse.ArgumentParser()
+parser.add_argument('domain')
+args = parser.parse_args()
 
-if __name__ == '__main__':
-    domain = input('Enter the domain to scan: ')
-    subdomains = scan_subdomains(domain)
-    print('Subdomains:', subdomains)
+domain = args.domain
+
+url = f"https://crt.sh/?q=%25.{domain}&output=json"
+
+try:
+    response = requests.get(url)
+    if response.ok:
+        data = json.loads(response.text)
+        subdomains = set()
+        for entry in data:
+            subdomains.add(entry['name_value'])
+        print(f"{len(subdomains)} subdomains found:")
+        for subdomain in subdomains:
+            print(subdomain)
+    else:
+        print(f"Failed to retrieve subdomains: {response.status_code} - {response.reason}")
+except Exception as e:
+    print(f"An error occurred while retrieving subdomains: {e}")
