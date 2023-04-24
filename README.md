@@ -43,7 +43,7 @@ Another success of the project was the ability to extract subdomains from a give
 
 However, the project had some limitations. One limitation was that the scanner was only able to extract subdomains from a single domain. In the future, the project could be extended to support the scanning of multiple domains at once. Another limitation was that the scanner did not check for duplicate subdomains. In the future, the project could be extended to remove duplicate subdomains from the output.
 
-Future Development:
+**Future Development:**
 
 There are several suggestions for future development of the subdomain scanner project. One suggestion is to add support for scanning multiple domains at once. This could be achieved by accepting a list of domains as input and running the scanner on each domain in the list.
 
