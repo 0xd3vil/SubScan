@@ -17,7 +17,7 @@ try:
         subdomains = set()
         for entry in data:
             subdomains.add(entry['name_value'])
-        print(f"{len(subdomains)} subdomains found:")
+        print(f"{len(subdomains)} vivek subdomain found:")
         for subdomain in subdomains:
             print(subdomain)
     else:
